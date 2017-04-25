@@ -1,0 +1,465 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/c4milo/node-inotify#readme"
+
+    >inotify (v1.4.1)</a>
+</h1>
+<h4>inotify bindings for v8 javascript engine</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.inotify">module inotify</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.inotify.Inotify">
+            function <span class="apidocSignatureSpan">inotify.</span>Inotify
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">inotify.</span>Inotify.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">inotify.</span>path</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">inotify.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.inotify.Inotify">module inotify.Inotify</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.inotify.Inotify.Inotify">
+            function <span class="apidocSignatureSpan">inotify.</span>Inotify
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_ACCESS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_ALL_EVENTS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_ATTRIB</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_CLOSE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_CLOSE_NOWRITE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_CLOSE_WRITE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_CREATE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_DELETE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_DELETE_SELF</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_DONT_FOLLOW</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_IGNORED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_ISDIR</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_MASK_ADD</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_MODIFY</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_MOVE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_MOVED_FROM</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_MOVED_TO</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_MOVE_SELF</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_ONESHOT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_ONLYDIR</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_OPEN</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_Q_OVERFLOW</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">inotify.Inotify.</span>IN_UNMOUNT</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.inotify.Inotify.prototype">module inotify.Inotify.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.inotify.Inotify.prototype.addWatch">
+            function <span class="apidocSignatureSpan">inotify.Inotify.prototype.</span>addWatch
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.inotify.Inotify.prototype.close">
+            function <span class="apidocSignatureSpan">inotify.Inotify.prototype.</span>close
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.inotify.Inotify.prototype.removeWatch">
+            function <span class="apidocSignatureSpan">inotify.Inotify.prototype.</span>removeWatch
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.inotify" id="apidoc.module.inotify">module inotify</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.inotify.Inotify" id="apidoc.element.inotify.Inotify">
+        function <span class="apidocSignatureSpan">inotify.</span>Inotify
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Inotify() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.inotify.Inotify" id="apidoc.module.inotify.Inotify">module inotify.Inotify</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.inotify.Inotify.Inotify" id="apidoc.element.inotify.Inotify.Inotify">
+        function <span class="apidocSignatureSpan">inotify.</span>Inotify
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Inotify() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.inotify.Inotify.prototype" id="apidoc.module.inotify.Inotify.prototype">module inotify.Inotify.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.inotify.Inotify.prototype.addWatch" id="apidoc.element.inotify.Inotify.prototype.addWatch">
+        function <span class="apidocSignatureSpan">inotify.Inotify.prototype.</span>addWatch
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function addWatch() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var dir = {
+    path: &#x27;./&#x27;,
+    watch_for: Inotify.IN_ALL_EVENTS,
+    callback: callback
+};
+
+var watch = inotify.<span class="apidocCodeKeywordSpan">addWatch</span>(dir);
+//inotify.removeWatch(watch);
+
+http.createServer(function (request, response) {
+    response.writeHead(200, {&#x27;Content-Type&#x27;: &#x27;text/plain&#x27;});
+    response.end(&#x27;Hello World\n&#x27;);
+}).listen(8124);
+console.log(&#x27;Http server started in 8124&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.inotify.Inotify.prototype.close" id="apidoc.element.inotify.Inotify.prototype.close">
+        function <span class="apidocSignatureSpan">inotify.Inotify.prototype.</span>close
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function close() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+```
+You can call this function as many times as you want in order to monitor different paths.
+**Monitoring of directories is not recursive**: to monitor subdirectories under a directory, additional *watches* must be created
+.
+
+  * `inotify.removeWatch(watch_descriptor)`: Remove a watch associated with the watch_descriptor param and returns `true` if the
+ action was successful or `false` in the opposite case. Removing a watch causes an `Inotify.IN_IGNORED` event to be generated for
+ this watch descriptor.
+
+  * `inotify.<span class="apidocCodeKeywordSpan">close</span>()`: Remove all the watches and close the inotify&#x27;s file descriptor
+. Returns `true` if the action was successful or false in the opposite case.
+
+### Event object structure
+```javascript
+var event = {
+watch: Watch descriptor,
+mask: Mask of events,
+cookie: Cookie that permits to associate events,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.inotify.Inotify.prototype.removeWatch" id="apidoc.element.inotify.Inotify.prototype.removeWatch">
+        function <span class="apidocSignatureSpan">inotify.Inotify.prototype.</span>removeWatch
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function removeWatch() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var dir = {
+    path: &#x27;./&#x27;,
+    watch_for: Inotify.IN_ALL_EVENTS,
+    callback: callback
+};
+
+var watch = inotify.addWatch(dir);
+//inotify.<span class="apidocCodeKeywordSpan">removeWatch</span>(watch);
+
+http.createServer(function (request, response) {
+    response.writeHead(200, {&#x27;Content-Type&#x27;: &#x27;text/plain&#x27;});
+    response.end(&#x27;Hello World\n&#x27;);
+}).listen(8124);
+console.log(&#x27;Http server started in 8124&#x27;);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
